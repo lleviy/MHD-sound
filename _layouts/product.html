@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include menu.html %}
+
+<div class="container">
+      <div class="product-container">
+           <div class="product-details" id="add">
+               {% for tag in site.categories %}
+                    {% if page.categories contains tag.title %}
+                        <a href="{{ site.baseurl }}/category/{{ page.category }}" class="article-tag">{{ tag.name }}</a>
+                    {% endif %}
+               {% endfor %}
+               {% for category in page.categories %}
+                    <a href="{{ site.baseurl }}/category/{{ category }}" class="article-tag">{{ category.name }}</a>
+               {% endfor %}
+               <h3>{{ page.name }}</h3>
+               {{ page.description_markdown | markdownify }}
+               <h4>${{ page.price }}</h4>
+           </div>
+      </div>
+</div>
