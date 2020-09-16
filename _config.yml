@@ -43,10 +43,8 @@ collections:
     permalink: /:categories/:title/
   categories:
     output: true
+    permalink: /category/:title/
     
-cloudcannon:
-  data:
-    categories: true
 
 defaults:
   -
@@ -55,6 +53,12 @@ defaults:
       type: categories
     values:
       layout: "category"
+  -
+    scope:
+      path: ""
+      type: products
+    values:
+      layout: "product"
 
 include:
   - _pages
