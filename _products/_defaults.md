@@ -5,7 +5,7 @@ image:
 price:
 layout: product
 category:
-- Upgrade
-- Other
+- upgrade
+- other
 
 ---
