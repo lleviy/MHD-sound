@@ -43,6 +43,10 @@ collections:
     permalink: /:categories/:title/
   categories:
     output: true
+    
+cloudcannon:
+  data:
+    categories: true
 
 defaults:
   -
