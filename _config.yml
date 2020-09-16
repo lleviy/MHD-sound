@@ -44,6 +44,8 @@ collections:
   categories:
     output: true
     permalink: /category/:title/
+  posts:
+    output: true
     
 
 defaults:
