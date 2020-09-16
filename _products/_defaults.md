@@ -1,4 +1,9 @@
 ---
+_options:
+    category:
+        - Upgrade
+        - Other
+
 category:
 name:
 description:
