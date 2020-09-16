@@ -31,8 +31,6 @@ github_username:  lleviy
 # Google Analytics
 google-analytics: # Add your identifier. For example UA-99631805-1.
 
-lang: ru
-
 # Build settings
 theme: minima
 plugins:
@@ -46,8 +44,6 @@ collections:
   categories:
     output: true
     permalink: /category/:title/
-  posts:
-    output: true
     
 
 defaults:
@@ -63,10 +59,6 @@ defaults:
       type: products
     values:
       layout: "product"
-  -
-    scope:
-      path: ""
-      type: posts
 
 include:
   - _pages
