@@ -78,6 +78,15 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+  
+_explore:
+  groups:
+    - heading: Blogging
+      collections:
+        - posts
+    - heading: Other
+      collections:
+        - products
 
 # Exclude from processing.
 # The following items will not be processed, by default.
