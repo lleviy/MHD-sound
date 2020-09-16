@@ -1,0 +1,14 @@
+---
+layout: page
+title: Статьи
+permalink: /articles/
+---
+
+{% for post in site.posts %}
+<h2 class="article__title">
+    <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+</h2>
+
+<p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 185 }}{% endif %}</p>
+
+{% endfor %}
