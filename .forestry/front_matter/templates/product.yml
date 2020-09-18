@@ -20,7 +20,8 @@ fields:
   default: []
   config:
     required: true
-    options: []
+    options:
+    - upgrade
     source:
       type: simple
       section: categories
