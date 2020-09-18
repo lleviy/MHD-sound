@@ -1,5 +1,5 @@
 ---
-category: _categories/upgrade.md
+category: upgrade
 name: Кабель сетевой №3
 price: "20"
 layout: ''
