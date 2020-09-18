@@ -42,3 +42,5 @@ fields:
       format: markdown
   label: description
   description: Описание продукта.
+pages:
+- _products/kabel-setevoy.md
