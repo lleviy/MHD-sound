@@ -1,0 +1,22 @@
+---
+label: Post
+hide_body: true
+fields:
+- type: text
+  name: category
+  label: category
+- type: text
+  name: name
+  label: name
+- type: text
+  name: price
+  label: price
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image
+- type: text
+  name: description_markdown
+  label: description_markdown
