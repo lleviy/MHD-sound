@@ -23,7 +23,7 @@ fields:
     options:
     - upgrade
     source:
-      type: simple
+      type: pages
       section: categories
       file: 
       path: 
