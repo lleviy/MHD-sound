@@ -3,9 +3,9 @@ name:
 description:
 image:
 price:
-layout: product
 category:
 - upgrade
-- other
-
+- cabels network
+- cabels acoustic
+- cabels interblock
 ---
