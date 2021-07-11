@@ -11,3 +11,7 @@ fields:
 - type: text
   name: permalink
   label: permalink
+- name: menus
+  type: field_group
+  config: {}
+  label: Меню
