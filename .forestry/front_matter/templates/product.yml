@@ -5,12 +5,13 @@ display_field: name
 fields:
 - type: text
   name: name
-  label: name
+  label: Наименование продукта
   config:
     required: true
 - type: text
   name: price
-  label: price
+  label: Цена продукта
+  description: Указывается в рублях.
 - type: text
   name: layout
   label: layout
@@ -27,12 +28,15 @@ fields:
       section: categories
       file: 
       path: 
-  label: category
+  label: Категория продукта
+  description: Нельзя указывать родительскую категорию. Например, нельзя указывать
+    категорию "cables" (кабели), но можно указывать категорию "cables_network" (сетевые
+    кабели) или "upgrade" (модернизация), так как они не имеют дочерних категорий.
 - name: image
   type: file
   config:
     maxSize: 64
-  label: image
+  label: Изображение продукта
 - name: description_markdown
   type: textarea
   default: ''
@@ -41,7 +45,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: description
-  description: Описание продукта.
-pages:
-- _products/kabel-setevoy.md
+  label: Описание продукта

@@ -5,7 +5,7 @@ display_field: name
 fields:
 - type: text
   name: title
-  label: title
+  label: Название статьи
   config:
     required: true
 - type: text
@@ -15,10 +15,13 @@ fields:
   default: post
 - type: file
   name: image
-  label: image
+  label: Заглавное изображение
+  description: Это заглавное изображение будет отображаться вверху статьи. Загружать
+    необязательно. <br>Можно загрузить столько изображений, сколько нужно, прямо в
+    тексте статьи.
 - name: date
   type: datetime
-  label: date
+  label: Дата публикации статьи
   description: ''
   config:
     required: false

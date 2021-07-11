@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: directory
@@ -9,14 +9,14 @@ sections:
   label: Products
   create: all
   match: "**/*"
+- type: jekyll-posts
+  label: Posts
+  create: all
 - type: directory
   path: _categories
   label: Categories
   create: all
   match: "**/*"
-- type: jekyll-posts
-  label: Posts
-  create: all
 - type: jekyll-pages
   label: Pages
   create: all
