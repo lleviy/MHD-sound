@@ -27,7 +27,10 @@ fields:
       section: categories
       file: 
       path: 
-  label: category
+  label: Категория продукта
+  description: Нельзя указывать родительскую категорию. Например, нельзя указывать
+    категорию "cables" (кабели), но можно указывать категорию "cables_network" (сетевые
+    кабели) или "upgrade" (модернизация), так как они не имеют дочерних категорий.
 - name: image
   type: file
   config:
@@ -41,5 +44,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: description
-  description: Описание продукта.
+  label: Описание продукта
