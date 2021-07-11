@@ -1,5 +1,13 @@
 ---
 ---
+
+@import 'settings/variables';
+
 @import "base/base";
+
 @import 'modules/slider';
 @import 'modules/header';
+@import 'modules/footer';
+
+@import 'layouts/post';
+@import 'layouts/product';

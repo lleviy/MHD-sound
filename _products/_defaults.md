@@ -1,11 +1,11 @@
 ---
 title:
 name:
-description:
+description_markdown:
 image:
 price:
 category:
-- upgrade
+- Модернизация
 - cabels network
 - cabels acoustic
 - cabels interblock

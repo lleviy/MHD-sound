@@ -1,12 +1,74 @@
-body {
- font-family: 'Roboto Condensed', sans-serif;
+//body {
+// font-family: 'Roboto Condensed', sans-serif;
+//}
+
+//.content{
+//    width: 100%;
+//    position: absolute;
+//    top: 10%;
+//    margin: auto;
+//    padding: 2em;
+//}
+
+*, *::after, *::before {
+    box-sizing: border-box;
 }
 
-.content{
+html, body {
+    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 10%;
-    margin: auto;
-    padding: 2em;
+    margin: 0;
+    padding: 0;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    input, textarea {
+        border: 1px solid $border-color;
+        outline: none;
+        &:focus:required:invalid {
+            border-color: #e02f40;
+        }
+        &:required:valid {
+            border-color: #34a74e;
+        }
+    }
 }
 
+#main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+    &:active {
+        color: darken($link-color, 20%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    color: $heading-font-color;
+    line-height: initial;
+    letter-spacing: 0.5px;
+}

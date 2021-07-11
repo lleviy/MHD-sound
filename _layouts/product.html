@@ -2,22 +2,35 @@
 layout: default
 ---
 
-{% include menu.html %}
-
-<div class="container">
-      <div class="product-container">
-           <div class="product-details" id="add">
-               {% for tag in site.categories %}
+<div class="row">
+    {% include menu.html %}
+    <div class="container">
+        <div class="product-container">
+            <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="product-details" id="add">
+                    {% for tag in site.categories %}
                     {% if page.categories contains tag.title %}
-                        <a href="{{ site.baseurl }}/category/{{ page.category }}" class="article-tag">{{ tag.name }}</a>
+                    <a href="{{ site.baseurl }}/{{ page.category }}" class="article-tag">{{ tag.name }}</a>
                     {% endif %}
-               {% endfor %}
-               {% for category in page.categories %}
-                    <a href="{{ site.baseurl }}/category/{{ category }}" class="article-tag">{{ category.name }}</a>
-               {% endfor %}
-               <h3>{{ page.name }}</h3>
-               {{ page.description_markdown | markdownify }}
-               <h4>${{ page.price }}</h4>
-           </div>
-      </div>
+                    {% endfor %}
+                    {% for category in page.categories %}
+                    <a href="{{ site.baseurl }}/{{ category }}" class="article-tag">{{ category.name }}</a>
+                    {% endfor %}
+                    <h3>{{ page.name }}</h3>
+                    {{ page.description_markdown | markdownify }}
+                    <h4>{{ page.price }} руб.</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                {% if page.image %}
+                <div class="product-image" style="background-image: url({{url}}{{site.baseurl}}{{page.image}})"></div>
+                {% else %}
+                {% assign no-image = 'product-no-image' %}
+                {% endif %}
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

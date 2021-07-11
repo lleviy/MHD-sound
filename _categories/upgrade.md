@@ -1,6 +1,9 @@
 ---
 name: Модернизация
 title: upgrade
-tag: upgrade
-permalink: "/category/upgrade"
+permalink: "/upgrade"
+menus: 
+    categories:
+        weight: 4
+        title: Модернизация
 ---

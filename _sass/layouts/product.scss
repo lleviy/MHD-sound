@@ -1,0 +1,12 @@
+.product-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+    display: table;
+    width: 100%;
+    min-height: 600px;
+    padding-top: 50%;
+  }
+}

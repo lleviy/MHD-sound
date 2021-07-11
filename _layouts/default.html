@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 {% include head.html %}
 
 <body>
-
+<div id="main-wrapper">
 {% if site.data.settings.google-analytics %}
 {% include google-analytics.html %}
 {% endif %}
@@ -16,9 +16,10 @@
     {{ content }}
 </main>
 <!-- end content -->
+<div class="top ion ion-ios-arrow-up" title="Top"></div>
 
 {% include footer.html %}
-
+</div>
 {% include javascripts.html %}
 </body>
 
