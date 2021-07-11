@@ -71,6 +71,7 @@ exclude:
   - LICENCE
   - .jekyll-cache/
   - .idea/
+  - vendor
 
 sass:
   sass_dir: _sass
